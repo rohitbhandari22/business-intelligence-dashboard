@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+```
+<div class="sidebar">
+    <h2>BI Dashboard</h2>
+    <p class="active">Dashboard</p>
+    <p>Sales</p>
+    <p>Customers</p>
+    <p>Products</p>
+    <p>Reports</p>
+</div>
+
+<main class="main-content">
+    <header>
+        <div>
+            <h1>Business Intelligence Dashboard</h1>
+            <p>Monitor your business performance</p>
+        </div>
+        <button onclick="exportReport()">Export Report</button>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <h2>₹12,45,000</h2>
+            <span>+18.5% this month</span>
+        </div>
+
+        <div class="card">
+            <h3>Total Sales</h3>
+            <h2>8,420</h2>
+            <span>+12.4% this month</span>
+        </div>
+
+        <div class="card">
+            <h3>Customers</h3>
+            <h2>3,240</h2>
+            <span>+8.7% this month</span>
+        </div>
+
+        <div class="card">
+            <h3>Products</h3>
+            <h2>524</h2>
+            <span>42 low stock</span>
+        </div>
+    </section>
+
+    <section class="charts">
+        <div class="chart-box">
+            <h2>Revenue Overview</h2>
+            <canvas id="revenueChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h2>Sales by Category</h2>
+            <canvas id="salesChart"></canvas>
+        </div>
+    </section>
+
+    <section class="table-box">
+        <h2>Recent Sales</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="salesTable">
+                <tr>
+                    <td>Rahul Sharma</td>
+                    <td>Laptop Pro</td>
+                    <td>Electronics</td>
+                    <td>₹75,000</td>
+                    <td class="success">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Priya Singh</td>
+                    <td>Office Chair</td>
+                    <td>Furniture</td>
+                    <td>₹12,500</td>
+                    <td class="success">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Amit Kumar</td>
+                    <td>Smartphone X</td>
+                    <td>Electronics</td>
+                    <td>₹45,000
+```
